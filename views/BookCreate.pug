@@ -1,0 +1,25 @@
+extends base
+
+block content
+    main.main
+        .login-form
+            h2.heading-secondary.ma-bt-lg Create Book
+            form.form
+                .form__group
+                    label.form__label(for='title') Title
+                    input#title.form__input(type='text', placeholder='Book Title', required)
+                .form__group
+                    label.form__label(for='description') Description
+                    input#description.form__input(type='text', placeholder='Book Summary', required)
+                .form__group.ma-bt-md
+                    label.form__label(for='isbn') ISBN
+                    input#isbn.form__input(type='number', placeholder='••••••••', required, minlength='8')
+                .form__group.ma-bt-md
+                    label.form__label(for='author') Author
+                    input#author.form__input(type='text', placeholder='Book Author', required)
+                .form__group
+                    label.form__label(for='Number Of Copies') Number Of Copies
+                    input#NumberOfCopies.form__input(type='number', placeholder='Availibility',, required)
+                .form__group
+                    button.btn.btn--green#createBtn Create Book
+                

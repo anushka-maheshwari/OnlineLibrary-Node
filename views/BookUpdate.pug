@@ -1,0 +1,24 @@
+extends base
+
+block content
+    main.main
+        .login-form
+            h2.heading-secondary.ma-bt-lg Update Book
+            form.form
+                .form__group
+                    label.form__label(for='title') Title
+                    input#title.form__input(type='text', value=book.title, required)
+                .form__group
+                    label.form__label(for='description') Description
+                    input#description.form__input(type='text', value=book.description)
+                .form__group.ma-bt-md
+                    label.form__label(for='isbn') ISBN
+                    input#isbn.form__input(type='number', value=book.ISBN, minlength='8')
+                .form__group.ma-bt-md
+                    label.form__label(for='author') Author
+                    input#author.form__input(type='text', value=book.author)
+                .form__group
+                    label.form__label(for='Number Of Copies') Number Of Copies
+                    input#NumberOfCopies.form__input(type='number', value=book.numberOfCopies)
+                .form__group
+                    button.btn.btn--green#updateBtn Update Book

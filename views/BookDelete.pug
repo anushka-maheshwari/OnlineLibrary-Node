@@ -1,0 +1,15 @@
+extends base
+
+block content
+    main.main
+        .login-form
+            h2.heading-secondary.ma-bt-lg Delete Book
+            form.form
+                .form__group
+                    label.form__label(for='title') Title
+                    input#title.form__input(type='text', placeholder='Book Title', required)
+                .form__group.ma-bt-md
+                    label.form__label(for='author') Author
+                    input#author.form__input(type='text', placeholder='Book Author', required)
+                .form__group
+                    button.btn.btn--green#deleteBtn Delete Book
